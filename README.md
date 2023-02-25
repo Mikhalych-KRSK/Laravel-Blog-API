@@ -10,7 +10,7 @@ Implemented:
 1.pagination of 10 news per page.   
 2.register / log in.    
 3.CRUD for posts and categories.    
-4.each post can belong to any category. 
+4.each post can belong to any category.     
 5.validation.   
 6.password encryption.  
     

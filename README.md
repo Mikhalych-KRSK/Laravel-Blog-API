@@ -20,9 +20,9 @@ In progress:
 2.listing posts by category
 3.improvement in all aspects blog
 
----------------------
-### h3 How to use API?
----------------------
+
+h3 How to use API?
+
 
 Follow these steps to get this project live
 

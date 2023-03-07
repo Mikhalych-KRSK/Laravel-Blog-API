@@ -11,6 +11,6 @@ class IndexController extends Controller
     {
         $posts = Post::paginate(10);
         $likedPosts = Post::withCount("likedUsers")->get();
-        return /*view("Сайт (посты)", compact("posts","likedPosts"))*/ ; 
+        return view("Сайт (посты)", compact("posts","likedPosts")); 
     }
 }

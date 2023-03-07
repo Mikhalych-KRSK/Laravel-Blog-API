@@ -46,4 +46,17 @@ Route::group(["namespace" => "App\Http\Controllers\Post", "prefix" => "posts"], 
     Route::get("/{post}/edit", EditController::class)->name("post.create.edit");
     Route::patch("/{post}", UpdateController::class)->name("post.create.update");
     Route::delete("/", DeleteController::class)->name("post.create.delete");
+
+    Route::group(["namespace" => "App\Http\Controllers\Post", "prefix" => "{post}/comments"], function () {
+        Route::post("/", StoreController::class)->name("post.comment.store");
+
+    });
+
+    Route::group(["namespace" => "App\Http\Controllers\Post", "prefix" => "{post}/like"], function () {
+        Route::post("/", StoreController::class)->name("post.like.store");
+
+    });
+    
 });
+
+?>
